@@ -86,131 +86,131 @@ export const FormProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const validateCurrentStep = () => {
     const newErrors: Record<string, string> = {};
-    let isValid = true;
+    // let isValid = true;
 
     switch (currentStep) {
       case 0:
         break;
 
       case 1:
-        if (!formData.companyName) {
-          newErrors.companyName = "Company name is required";
-          isValid = false;
-        }
-        if (!formData.companyType) {
-          newErrors.companyType = "Company type is required";
-          isValid = false;
-        }
-        if (!formData.establishmentYear) {
-          newErrors.establishmentYear = "Establishment year is required";
-          isValid = false;
-        }
-        if (!formData.capitalStructure) {
-          newErrors.capitalStructure = "Capital Structure is required";
-          isValid = false;
-        }
-        if (!formData.activities) {
-          newErrors.activities = "Activities is required";
-          isValid = false;
-        }
-        if (!formData.employees) {
-          newErrors.employees = "Employees is required";
-          isValid = false;
-        }
-        if (!formData.companyAddress) {
-          newErrors.companyAddress = "Company Address is required";
-          isValid = false;
-        }
-        if (!formData.organizationStructure) {
-          newErrors.organizationStructure = "Organization Structure is required";
-          isValid = false;
-        }
+        // if (!formData.companyName) {
+        //   newErrors.companyName = "Company name is required";
+        //   isValid = false;
+        // }
+        // if (!formData.companyType) {
+        //   newErrors.companyType = "Company type is required";
+        //   isValid = false;
+        // }
+        // if (!formData.establishmentYear) {
+        //   newErrors.establishmentYear = "Establishment year is required";
+        //   isValid = false;
+        // }
+        // if (!formData.capitalStructure) {
+        //   newErrors.capitalStructure = "Capital Structure is required";
+        //   isValid = false;
+        // }
+        // if (!formData.activities) {
+        //   newErrors.activities = "Activities is required";
+        //   isValid = false;
+        // }
+        // if (!formData.employees) {
+        //   newErrors.employees = "Employees is required";
+        //   isValid = false;
+        // }
+        // if (!formData.companyAddress) {
+        //   newErrors.companyAddress = "Company Address is required";
+        //   isValid = false;
+        // }
+        // if (!formData.organizationStructure) {
+        //   newErrors.organizationStructure = "Organization Structure is required";
+        //   isValid = false;
+        // }
         break;
 
       case 2:
-        if (!formData.justification) {
-          newErrors.justification = "Justification is required";
-          isValid = false;
-        }
-        if (!formData.partnershipDescription) {
-          newErrors.partnershipDescription = "Partnership Description is required";
-          isValid = false;
-        }
-        if (!formData.achievements) {
-          newErrors.achievements = "Achievement is required";
-          isValid = false;
-        }
-        if (!formData.objectives) {
-          newErrors.objectives = "Objective is required";
-          isValid = false;
-        }
-        if (!formData.resourcesAndTimeline) {
-          newErrors.resourcesAndTimeline = "Resources and timeline is required";
-          isValid = false;
-        }
-        if (!formData.expectedBenefits) {
-          newErrors.expectedBenefits = "Expected benefits are required";
-          isValid = false;
-        }
-        if (!formData.objectiveChange) {
-          newErrors.objectiveChange = "Objective Change is required";
-          isValid = false;
-        }
-        if (!formData.projectCompletion) {
-          newErrors.projectCompletion = "Project Completion is required";
-          isValid = false;
-        }
-        if (!formData.societalBenefit) {
-          newErrors.societalBenefit = "Societal benefit is required";
-          isValid = false;
-        }
-        if (!formData.patents) {
-          newErrors.patents = "Patents is required";
-          isValid = false;
-        }
-        if (!formData.academicContribution) {
-          newErrors.academicContribution = "Academic Contribution is required";
-          isValid = false;
-        }
-        if (!formData.orgContribution) {
-          newErrors.orgContribution = "Org contribution is required";
-          isValid = false;
-        }
-        if (!formData.externalCollaborators) {
-          newErrors.externalCollaborators = "External collaborators are required";
-          isValid = false;
-        }
-        if (!formData.rndDetails) {
-          newErrors.rndDetails = "Rnd Details are required";
-          isValid = false;
-        }
-        if (!formData.academicScientists) {
-          newErrors.academicScientists = "Academic scientists are required";
-          isValid = false;
-        }
-        if (!formData.collabOrigin) {
-          newErrors.collabOrigin = "Collab origin are required";
-          isValid = false;
-        }
+        // if (!formData.justification) {
+        //   newErrors.justification = "Justification is required";
+        //   isValid = false;
+        // }
+        // if (!formData.partnershipDescription) {
+        //   newErrors.partnershipDescription = "Partnership Description is required";
+        //   isValid = false;
+        // }
+        // if (!formData.achievements) {
+        //   newErrors.achievements = "Achievement is required";
+        //   isValid = false;
+        // }
+        // if (!formData.objectives) {
+        //   newErrors.objectives = "Objective is required";
+        //   isValid = false;
+        // }
+        // if (!formData.resourcesAndTimeline) {
+        //   newErrors.resourcesAndTimeline = "Resources and timeline is required";
+        //   isValid = false;
+        // }
+        // if (!formData.expectedBenefits) {
+        //   newErrors.expectedBenefits = "Expected benefits are required";
+        //   isValid = false;
+        // }
+        // if (!formData.objectiveChange) {
+        //   newErrors.objectiveChange = "Objective Change is required";
+        //   isValid = false;
+        // }
+        // if (!formData.projectCompletion) {
+        //   newErrors.projectCompletion = "Project Completion is required";
+        //   isValid = false;
+        // }
+        // if (!formData.societalBenefit) {
+        //   newErrors.societalBenefit = "Societal benefit is required";
+        //   isValid = false;
+        // }
+        // if (!formData.patents) {
+        //   newErrors.patents = "Patents is required";
+        //   isValid = false;
+        // }
+        // if (!formData.academicContribution) {
+        //   newErrors.academicContribution = "Academic Contribution is required";
+        //   isValid = false;
+        // }
+        // if (!formData.orgContribution) {
+        //   newErrors.orgContribution = "Org contribution is required";
+        //   isValid = false;
+        // }
+        // if (!formData.externalCollaborators) {
+        //   newErrors.externalCollaborators = "External collaborators are required";
+        //   isValid = false;
+        // }
+        // if (!formData.rndDetails) {
+        //   newErrors.rndDetails = "Rnd Details are required";
+        //   isValid = false;
+        // }
+        // if (!formData.academicScientists) {
+        //   newErrors.academicScientists = "Academic scientists are required";
+        //   isValid = false;
+        // }
+        // if (!formData.collabOrigin) {
+        //   newErrors.collabOrigin = "Collab origin are required";
+        //   isValid = false;
+        // }
         break;
 
       case 3:
-        if (!formData.commercializationDetails) {
-          newErrors.commercializationDetails = "Commercialization Details are required";
-          isValid = false;
-        }
-        if (!formData.developmentScope) {
-          newErrors.developmentScope = "Development Scope is required";
-          isValid = false;
-        }
-        if (!formData.trialProduction) {
-          newErrors.trialProduction = "Trial Production is required";
-          isValid = false;
-        }
-        if (!formData.capacityInfo) {
-          newErrors.capacityInfo = "Capacity Info is required";
-          isValid = false;
-        }
+        // if (!formData.commercializationDetails) {
+        //   newErrors.commercializationDetails = "Commercialization Details are required";
+        //   isValid = false;
+        // }
+        // if (!formData.developmentScope) {
+        //   newErrors.developmentScope = "Development Scope is required";
+        //   isValid = false;
+        // }
+        // if (!formData.trialProduction) {
+        //   newErrors.trialProduction = "Trial Production is required";
+        //   isValid = false;
+        // }
+        // if (!formData.capacityInfo) {
+        //   newErrors.capacityInfo = "Capacity Info is required";
+        //   isValid = false;
+        // }
         break;
 
       case 4:
@@ -221,7 +221,7 @@ export const FormProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
 
     setErrors(newErrors);
-    return isValid;
+    return true;
   };
 
   return (

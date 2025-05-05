@@ -95,17 +95,35 @@ const Stage2AddressInfo = () => {
 
         <div className="space-y-2">
           <Label htmlFor="establishmentYear">Year of Establishment</Label>
-          <Input
+          {/* <Input
             id="establishmentYear"
             name="establishmentYear"
             type="number"
-            value={formData.establishmentYear || ''}
+            value={formData.establishmentYear ? String(formData.establishmentYear) : ''}
             onChange={handleChange}
             placeholder="YYYY"
             min="1900"
             max={new Date().getFullYear()}
             className={errors.establishmentYear ? "border-destructive" : ""}
-          />
+          /> */}
+          <Select
+            onValueChange={(value) => setFormData(prev => ({ ...prev, establishmentYear: parseInt(value, 10) }))}
+            value={formData.establishmentYear ? String(formData.establishmentYear) : ''}
+          >
+            <SelectTrigger
+              id="establishmentYear"
+              className={errors.establishmentYear ? "border-destructive" : ""}
+            >
+              <SelectValue placeholder="Select establishment year" />
+            </SelectTrigger>
+            <SelectContent>
+              {Array.from({ length: 2026 - 1950 }, (_, i) => 1950 + i).map((type) => (
+                <SelectItem key={type} value={String(type)}>
+                  {type}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
           {errors.establishmentYear && (
             <p className="text-sm text-destructive">{errors.establishmentYear}</p>
           )}
