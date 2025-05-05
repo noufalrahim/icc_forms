@@ -1,4 +1,5 @@
 import MultiStageForm from "@/components/MultiStageForm/MultiStageForm";
+import logo from "@/assets/images.jpg"
 
 export default function Home() {
   return (
@@ -6,7 +7,7 @@ export default function Home() {
       <div className="container max-w-3xl mx-auto px-4">
         <div className="text-center mb-8">
           <div className="items-center flex justify-center">
-            <img src="/src/assets/images.jpg" className="h-36 w-36" />
+            <img src={logo} className="h-36 w-36" />
           </div>
           <h1 className="text-3xl font-bold tracking-tight">ICC Awards Nomination Form</h1>
           <p className="text-muted-foreground mt-2">ICC – K. V. MARIWALA AWARD FOR “EFFECTIVE CHEMICAL INDUSTRY - ACADEMIA PARTNERSHIP”</p>
